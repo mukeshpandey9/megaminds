@@ -18,28 +18,28 @@ const ResearchPage = () => {
               <div className="stat">
                 <FaHandshake className="icon" />
                 <div>
-                  <h2>17</h2>
+                  <h2>6</h2>
                   <p>Years of Service</p>
                 </div>
               </div>
               <div className="stat">
                 <FaSmile className="icon" />
                 <div>
-                  <h2>10550+</h2>
+                  <h2>100+</h2>
                   <p>Happy Clients</p>
                 </div>
               </div>
               <div className="stat">
                 <FaCheckCircle className="icon" />
                 <div>
-                  <h2>8300+</h2>
+                  <h2>500+</h2>
                   <p>PhD Thesis Completed</p>
                 </div>
               </div>
               <div className="stat">
                 <FaGraduationCap className="icon" />
                 <div>
-                  <h2>510+</h2>
+                  <h2>50+</h2>
                   <p>Qualified Experts</p>
                 </div>
               </div>
@@ -55,9 +55,9 @@ const ResearchPage = () => {
         </div>
       </div>
       <div className="about">
-        <h2>About <span className="highlight">Us</span></h2>
+        <h2>ABOUT <span className="highlight">US</span></h2>
         <p>
-          MEGAMINDS is India’s premier research consulting organization, helping PhD and Master’s students achieve academic excellence through innovative and customized support services. With nearly two decades of experience, we have earned a reputation as a trusted partner in the academic community. Our team of over 500 experts comprises talented researchers, analysts, and writers, who are dedicated to maintaining the highest ethical standards and delivering affordable, effective solutions tailored to your unique needs. As a division of ELK Education Consultants Pvt Ltd, we have been serving doctoral candidates since 2006, providing expert guidance and support at every stage of their research journey.
+        MEGAMINDS stands at the forefront of research consulting in India, dedicated to empowering PhD and Master’s students with exceptional academic support. With almost 20 years of experience, we have established ourselves as a trusted ally within the academic community. Our team of over 50 skilled experts, including researchers, analysts, and writers, is committed to upholding the highest ethical standards while offering innovative, customized solutions. Since 2018, we have been a pivotal resource for doctoral candidates, guiding them through every phase of their research journey with affordable and effective support.
         </p>
       </div>
       <div className="questions">
@@ -98,15 +98,13 @@ const ResearchPage = () => {
             <div className="cardContent">
               <h3>PhD Assistance in Engineering & Technology</h3>
               <p>Algorithm Development</p>
-              <p>Image Signal Processing</p>
-              <p>VLSI Modelsim, Vivado</p>
-              <p>Circuit Simulation & Layout</p>
-              <p>Power Electronics, Power systems</p>
+              <p>Deep Learning</p>
+              <p>Machine Learning</p>
               <p>Big Data</p>
               <p>IoT</p>
               <p>Cloud Computing</p>
               <p>Python, MATLAB Programming</p>
-              <p>NR7 NISR ClowiSIM</p>
+              <p>Networking</p>
             </div>
           </div>
           <div className="card">
