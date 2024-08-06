@@ -67,7 +67,9 @@ const Navbar = () => {
           {item.dropdown && (
             <div
               className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
-                dropdownOpen[itemKey] ? "max-h-screen" : "max-h-0"
+                dropdownOpen[itemKey]
+                  ? "max-h-screen"
+                  : "max-h-0 pointer-events-none"
               }`}
             >
               {renderNavItems(item.dropdown, itemKey)}
@@ -85,7 +87,7 @@ const Navbar = () => {
     >
       <button
         onClick={toggleMenu}
-        className="bg-black w-full flex gap-3 items-center justify-between text-white p-3 rounded shadow-lg hover:bg-slate-700 text-3xl transition duration-300"
+        className="bg-black w-full flex gap-3 items-center justify-between text-white p-2 md:p-3 rounded shadow-lg hover:bg-slate-700 text-2xl md:text-3xl transition duration-300"
       >
         {menuOpen ? <LiaTimesSolid /> : <HiBars3BottomLeft />}
       </button>
