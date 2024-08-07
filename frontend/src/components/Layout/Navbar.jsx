@@ -35,46 +35,20 @@ const Navbar = () => {
     };
   }, []);
 
-  const renderNavItems = (items, parentIndex = "") => {
+  const renderNavItems = (items, parentIndex = 10) => {
     return items.map((item, index) => {
-      const itemKey = parentIndex ? `${parentIndex}-${index}` : `${index}`;
-
       return (
-        <div
-          key={itemKey}
-          className={`relative w-full ${parentIndex ? "pl-4" : ""}`}
-        >
-          {item.dropdown ? (
-            <div
-              onClick={() => toggleDropdown(itemKey)}
-              className="flex transition-all ease-in-out h-full w-full gap-2 items-center justify-between cursor-pointer text-white px-4 py-2 hover:bg-gray-700 rounded duration-200"
-            >
-              {item.title}
-              {dropdownOpen[itemKey] ? <GoChevronUp /> : <GoChevronDown />}
-            </div>
-          ) : (
-            <NavLink
-              to={item.link}
-              className={({ isActive }) =>
-                `flex gap-2 w-full items-center justify-between text-white ${
-                  isActive ? "font-semibold bg-orange-600" : "hover:bg-gray-700"
-                } px-4 py-2 rounded transition-colors duration-200`
-              }
-            >
-              {item.title}
-            </NavLink>
-          )}
-          {item.dropdown && (
-            <div
-              className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
-                dropdownOpen[itemKey]
-                  ? "max-h-screen"
-                  : "max-h-0 pointer-events-none"
-              }`}
-            >
-              {renderNavItems(item.dropdown, itemKey)}
-            </div>
-          )}
+        <div key={index} className={`relative w-full `}>
+          <NavLink
+            to={item.link}
+            className={({ isActive }) =>
+              `flex gap-2 w-full items-center justify-between text-white ${
+                isActive ? "font-semibold bg-orange-600" : "hover:bg-gray-700"
+              } px-4 py-2 rounded transition-colors duration-200`
+            }
+          >
+            {item.title}
+          </NavLink>
         </div>
       );
     });

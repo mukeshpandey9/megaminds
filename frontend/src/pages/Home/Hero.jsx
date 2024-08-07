@@ -1,31 +1,28 @@
 import React, { useState } from "react";
 import Button from "../../components/Button";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const TopNavbar = ({ className = "" }) => {
   const [activeSection, setActiveSection] = useState("research");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleNavLinkClick = (sectionId) => {
-    setIsDropdownOpen(false);
-    setActiveSection(sectionId);
-    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
-  };
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   const navItems = [
-    { id: "research", label: "Research" },
+    { id: "research", label: "Research", link: "/research" },
     { id: "master-dissertation", label: "Master Dissertation" },
     { id: "web-development", label: "Web Development" },
     { id: "application-development", label: "Application Development" },
     { id: "student-assignment", label: "Master Student Assignment" },
-    { id: "tech-projects", label: "B/Tech/ MTech Projects" },
-    { id: "online-classes", label: "Online Classes" },
-    { id: "guest-lectures", label: "Guest Lectures" },
-    { id: "offline-classes", label: "Offline Classes" },
+    { id: "tech-projects", label: "B.Tech/ M.Tech Projects" },
+    // { id: "online-classes", label: "Online Classes" },
+    // { id: "guest-lectures", label: "Guest Lectures" },
+    // { id: "offline-classes", label: "Offline Classes" },
   ];
 
   const selectedItem = navItems.find((item) => item.id === activeSection);
@@ -63,7 +60,7 @@ const TopNavbar = ({ className = "" }) => {
                 activeSection === item.id &&
                 "self-stretch [background:linear-gradient(90deg,_rgba(213,_103,_66,_0),_#d56742)] border-sandybrown border-r-[2px] border-solid overflow-hidden flex flex-row items-start justify-start py-1 pl-4"
               } my-[0.2rem]`}
-              onClick={() => handleNavLinkClick(item.id)}
+              onClick={() => navigate(item.link)}
             >
               <div className="flex flex-row items-center justify-between w-full px-4 py-2 text-[1rem] font-normal text-left text-white bg-transparent  rounded-md cursor-pointer">
                 {item.label}
@@ -98,19 +95,20 @@ const Hero = () => {
                 Research
               </h1>
               <div className="self-stretch relative md:text-[18px] font-nunito text-gray-200 text-base ">
-              MEGAMINDS stands at the forefront of research consulting in India,
-          dedicated to empowering PhD and Master’s students with exceptional
-          academic support. With almost 20 years of experience, we have
-          established ourselves as a trusted ally within the academic community.
-          Our team of over 50 skilled experts, including researchers, analysts,
-          and writers, is committed to upholding the highest ethical standards
-          while offering innovative, customized solutions. Since 2018, we have
-          been a pivotal resource for doctoral candidates, guiding them through
-          every phase of their research journey with affordable and effective
-          support.
+                MEGAMINDS stands at the forefront of research consulting in
+                India, dedicated to empowering PhD and Master’s students with
+                exceptional academic support. With almost 20 years of
+                experience, we have established ourselves as a trusted ally
+                within the academic community. Our team of over 50 skilled
+                experts, including researchers, analysts, and writers, is
+                committed to upholding the highest ethical standards while
+                offering innovative, customized solutions. Since 2018, we have
+                been a pivotal resource for doctoral candidates, guiding them
+                through every phase of their research journey with affordable
+                and effective support.
               </div>
             </div>
-            <Button title={"Know More"} />
+            <Button link="/research" title={"Know More"} />
           </div>
         </section>
         <TopNavbar />
