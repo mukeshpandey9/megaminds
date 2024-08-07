@@ -98,10 +98,16 @@ const Hero = () => {
                 Research
               </h1>
               <div className="self-stretch relative md:text-[18px] font-nunito text-gray-200 text-base ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              MEGAMINDS stands at the forefront of research consulting in India,
+          dedicated to empowering PhD and Master’s students with exceptional
+          academic support. With almost 20 years of experience, we have
+          established ourselves as a trusted ally within the academic community.
+          Our team of over 50 skilled experts, including researchers, analysts,
+          and writers, is committed to upholding the highest ethical standards
+          while offering innovative, customized solutions. Since 2018, we have
+          been a pivotal resource for doctoral candidates, guiding them through
+          every phase of their research journey with affordable and effective
+          support.
               </div>
             </div>
             <Button title={"Know More"} />

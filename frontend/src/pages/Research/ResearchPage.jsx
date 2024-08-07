@@ -104,6 +104,9 @@ const ResearchPage = () => {
 
   return (
     <>
+    <div className="w-full bg-gradient-to-br from-[#4D250F] to-[#3A1B0F] p-2 text-white mt-1">
+    <span className="text-sm font-medium">Home / Research</span>
+    </div>
       <div className="flex flex-col items-center p-8 bg-white w-full">
         <div className="flex flex-col lg:flex-row justify-between w-full max-w-screen-xl">
           <div className="flex-1 pr-8 w-full md:w-1/2 text-justify">
@@ -171,7 +174,7 @@ const ResearchPage = () => {
             </div>
           ))}
         </div>
-        <button className="mt-8 py-2 px-6 text-lg bg-purple-800 text-white rounded-lg hover:bg-purple-700 mb-8">
+        <button className="mt-8 py-2 px-6 text-lg bg-orange-600 text-white rounded-lg hover:bg-purple-700 mb-8">
           Register Now
         </button>
       </div>
@@ -456,6 +459,53 @@ const ResearchPage = () => {
           </button>
         </div>
       </div>
+
+
+      <div className="py-12 px-12">
+  <h2 className="text-3xl font-bold text-center mb-6">
+    Frequently Asked Questions
+  </h2>
+  <div className="max-w-120 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    {[
+      {
+        question: "What types of PhD support do you offer?",
+        answer: "We offer comprehensive support including research proposal development, literature review assistance, methodology design, data analysis, draft review and editing, formatting, proofreading, and publication assistance.",
+      },
+      {
+        question: "How can I get started with your services?",
+        answer: "You can start by filling out the quote request form on our website. Our team will review your request and get back to you with a customized plan and pricing.",
+      },
+      {
+        question: "What is the process for thesis assistance?",
+        answer: "The process includes an initial consultation to understand your needs, followed by targeted support based on your requirements. We provide regular updates and revisions to ensure your satisfaction.",
+      },
+      {
+        question: "Are your services confidential?",
+        answer: "Yes, we adhere to strict confidentiality policies. Your research and personal information are handled with the utmost privacy and security.",
+      },
+      {
+        question: "Do you offer support for specific research areas?",
+        answer: "Yes, we offer support in various research areas including engineering, technology, business management, and more. Please refer to our subjects covered section for detailed information.",
+      },
+      {
+        question: "What is the typical turnaround time for your services?",
+        answer: "Turnaround times vary depending on the complexity of the request. Generally, we aim to provide initial feedback within 5-7 business days. For detailed projects, timelines will be discussed and agreed upon during the consultation.",
+      },
+    ].map(({ question, answer }, index) => (
+      <div key={index} className="border-b border-gray-300 pb-4 mx-4">
+        <h3 className="text-xl font-semibold mb-2 text-orange-600">{question}</h3>
+        <p className="text-gray-700 text-justify">{answer}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
+
+
     </>
   );
 };
