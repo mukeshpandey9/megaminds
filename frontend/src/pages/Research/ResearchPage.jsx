@@ -112,7 +112,7 @@ const ResearchPage = () => {
           <div className="flex-1 pr-8 w-full md:w-1/2 text-justify">
             <h1 className="text-[2.1rem] leading-normal font-bold text-center mb-4">
               Achieve Academic Excellence With Innovative Consulting Solutions
-              and <span className="text-orange-600">Expert Guidance</span> From{" "}
+              and Expert Guidance From{" "}
               <span className="text-orange-600">MEGAMINDS</span> for PhD and
               Master’s Research
             </h1>
