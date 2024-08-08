@@ -104,12 +104,12 @@ const ResearchPage = () => {
 
   return (
     <>
-    <div className="w-full bg-gradient-to-br from-[#4D250F] to-[#3A1B0F] p-2 text-white mt-1">
-    <span className="text-sm font-medium">Home / Research</span>
-    </div>
+      <div className="font-nunito w-full bg-gradient-to-br from-[#4D250F] to-[#3A1B0F] p-2 text-white mt-1">
+        <span className="text-sm font-medium">Home / Research</span>
+      </div>
       <div className="flex flex-col items-center p-8 bg-white w-full">
         <div className="flex flex-col lg:flex-row justify-between w-full max-w-screen-xl">
-          <div className="flex-1 pr-8 w-full md:w-1/2 text-justify">
+          <div className="flex-1 pr-8 w-full  text-justify">
             <h1 className="text-[2.1rem] leading-normal font-bold text-center mb-4">
               Achieve Academic Excellence With Innovative Consulting Solutions
               and <span className="text-orange-600">Expert Guidance</span> From{" "}
@@ -120,7 +120,7 @@ const ResearchPage = () => {
         </div>
       </div>
 
-      <div className="flex justify-between bg-white px-2 py-6 rounded-lg w-full mx-auto max-w-screen-xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 bg-white px-2 py-6 rounded-lg w-full mx-auto max-w-screen-xl">
         {[
           { icon: FaHandshake, count: "6", label: "Years of Service" },
           { icon: FaSmile, count: "100+", label: "Happy Clients" },
@@ -159,7 +159,7 @@ const ResearchPage = () => {
         <h2 className="text-4xl font-bold my-4">
           STRUGGLING WITH YOUR PHD WORK?
         </h2>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center w-full">
           {[
             "Overwhelmed by finding the perfect PhD topic?",
             "Need guidance on writing a compelling research proposal?",
@@ -168,13 +168,16 @@ const ResearchPage = () => {
             "Stuck on writing and finalizing your research paper?",
             "Finding the process of publishing in Scopus journals challenging?",
           ].map((text, index) => (
-            <div key={index} className="flex items-center m-4">
-              <FaCheckCircle className="text-xl text-orange-600 mr-2" />
-              <p>{text}</p>
+            <div
+              key={index}
+              className="flex text-left gap-4 items-center m-4 w-fit"
+            >
+              <FaCheckCircle className="text-xl w-8 text-orange-600" />
+              <p className="">{text}</p>
             </div>
           ))}
         </div>
-        <button className="mt-8 py-2 px-6 text-lg bg-orange-600 text-white rounded-lg hover:bg-purple-700 mb-8">
+        <button className="mt-8 py-2 px-6 text-lg bg-orange-600 text-white rounded-lg hover:bg-orange-700 mb-8">
           Register Now
         </button>
       </div>
@@ -202,7 +205,7 @@ const ResearchPage = () => {
           ].map(({ icon: Icon, label }, index) => (
             <div
               key={index}
-              className="flex items-center bg-white justify-center rounded-lg p-4 shadow-md"
+              className="flex items-center bg-white justify-start md:justify-center rounded-lg p-4 shadow-md"
             >
               <Icon className="text-4xl text-orange-600 mr-3" />
               <div>
@@ -299,7 +302,10 @@ const ResearchPage = () => {
         <form className="max-w-4xl mx-auto bg-orange-50 p-8 rounded-lg shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div>
-              <label htmlFor="name" className="block text-lg font-medium mb-2">
+              <label
+                htmlFor="name"
+                className="block text-lg font-medium mb-2 text-left md:text-center"
+              >
                 Name
               </label>
               <input
@@ -312,7 +318,10 @@ const ResearchPage = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-lg font-medium mb-2">
+              <label
+                htmlFor="email"
+                className="block text-lg font-medium mb-2 text-left md:text-center"
+              >
                 Email
               </label>
               <input
@@ -327,7 +336,7 @@ const ResearchPage = () => {
             <div>
               <label
                 htmlFor="contact-number"
-                className="block text-lg font-medium mb-2"
+                className="block text-lg font-medium mb-2 text-left md:text-center"
               >
                 Contact Number
               </label>
@@ -341,7 +350,7 @@ const ResearchPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6  text-left md:text-center">
             <div>
               <label
                 htmlFor="area-of-research"
@@ -460,52 +469,53 @@ const ResearchPage = () => {
         </div>
       </div>
 
-
       <div className="py-12 px-12">
-  <h2 className="text-3xl font-bold text-center mb-6">
-    Frequently Asked Questions
-  </h2>
-  <div className="max-w-120 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-    {[
-      {
-        question: "What types of PhD support do you offer?",
-        answer: "We offer comprehensive support including research proposal development, literature review assistance, methodology design, data analysis, draft review and editing, formatting, proofreading, and publication assistance.",
-      },
-      {
-        question: "How can I get started with your services?",
-        answer: "You can start by filling out the quote request form on our website. Our team will review your request and get back to you with a customized plan and pricing.",
-      },
-      {
-        question: "What is the process for thesis assistance?",
-        answer: "The process includes an initial consultation to understand your needs, followed by targeted support based on your requirements. We provide regular updates and revisions to ensure your satisfaction.",
-      },
-      {
-        question: "Are your services confidential?",
-        answer: "Yes, we adhere to strict confidentiality policies. Your research and personal information are handled with the utmost privacy and security.",
-      },
-      {
-        question: "Do you offer support for specific research areas?",
-        answer: "Yes, we offer support in various research areas including engineering, technology, business management, and more. Please refer to our subjects covered section for detailed information.",
-      },
-      {
-        question: "What is the typical turnaround time for your services?",
-        answer: "Turnaround times vary depending on the complexity of the request. Generally, we aim to provide initial feedback within 5-7 business days. For detailed projects, timelines will be discussed and agreed upon during the consultation.",
-      },
-    ].map(({ question, answer }, index) => (
-      <div key={index} className="border-b border-gray-300 pb-4 mx-4">
-        <h3 className="text-xl font-semibold mb-2 text-orange-600">{question}</h3>
-        <p className="text-gray-700 text-justify">{answer}</p>
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Frequently Asked Questions
+        </h2>
+        <div className="max-w-120 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              question: "What types of PhD support do you offer?",
+              answer:
+                "We offer comprehensive support including research proposal development, literature review assistance, methodology design, data analysis, draft review and editing, formatting, proofreading, and publication assistance.",
+            },
+            {
+              question: "How can I get started with your services?",
+              answer:
+                "You can start by filling out the quote request form on our website. Our team will review your request and get back to you with a customized plan and pricing.",
+            },
+            {
+              question: "What is the process for thesis assistance?",
+              answer:
+                "The process includes an initial consultation to understand your needs, followed by targeted support based on your requirements. We provide regular updates and revisions to ensure your satisfaction.",
+            },
+            {
+              question: "Are your services confidential?",
+              answer:
+                "Yes, we adhere to strict confidentiality policies. Your research and personal information are handled with the utmost privacy and security.",
+            },
+            {
+              question: "Do you offer support for specific research areas?",
+              answer:
+                "Yes, we offer support in various research areas including engineering, technology, business management, and more. Please refer to our subjects covered section for detailed information.",
+            },
+            {
+              question:
+                "What is the typical turnaround time for your services?",
+              answer:
+                "Turnaround times vary depending on the complexity of the request. Generally, we aim to provide initial feedback within 5-7 business days. For detailed projects, timelines will be discussed and agreed upon during the consultation.",
+            },
+          ].map(({ question, answer }, index) => (
+            <div key={index} className="border-b border-gray-300 pb-4 mx-4">
+              <h3 className="text-xl font-semibold mb-2 text-orange-600">
+                {question}
+              </h3>
+              <p className="text-gray-700 text-justify">{answer}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-
-
-
-
-
-
-
     </>
   );
 };
