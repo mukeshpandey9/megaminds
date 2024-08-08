@@ -86,7 +86,7 @@ const AssignmentPage = () => {
             {/* Text Block */}
             <div className="md:w-2/3 mb-8 mr-3">
               <h2 className="text-3xl font-bold text-center text-black mb-4">
-                Instant Assignment Help at{" "}
+                Masters  Student Assignment Support at{" "}
                 <span className="text-3xl font-semibold text-orange-600 mb-4">
                   MEGAMINDS
                 </span>
@@ -109,11 +109,11 @@ const AssignmentPage = () => {
 
               {/* 3-Step Process Cards */}
               <section className="py-8">
-                <h2 className="text-3xl font-bold bg-orange-200 text-center text-black mb-8">
+                <h2 className="text-2xl font-bold bg-orange-800 text-center text-white mb-8">
                   3-Step Assignment Support Process
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                  <div className="bg-orange-200 p-6 rounded-lg shadow-md text-center">
                     <FontAwesomeIcon
                       icon={faShoppingCart}
                       className="text-orange-600 text-4xl mb-4"
@@ -126,7 +126,7 @@ const AssignmentPage = () => {
                       start working on your assignment immediately.
                     </p>
                   </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                  <div className="bg-orange-200 p-6 rounded-lg shadow-md text-center">
                     <FontAwesomeIcon
                       icon={faCreditCard}
                       className="text-orange-600 text-4xl mb-4"
@@ -139,7 +139,7 @@ const AssignmentPage = () => {
                       offer multiple secure payment options.
                     </p>
                   </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                  <div className="bg-orange-200 p-6 rounded-lg shadow-md text-center">
                     <FontAwesomeIcon
                       icon={faDownload}
                       className="text-orange-600 text-4xl mb-4"

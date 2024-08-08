@@ -20,7 +20,7 @@ const Header = () => {
       {/* Banner with Navbar */}
       <div
         className="px-5 md:px-10 w-full text-center bg-no-repeat bg-center flex items-center justify-center relative"
-        style={{ backgroundImage: "url('/images/nav-banner.png')", backgroundRepeat: "repeat", backgroundSize: "contain", height: "5vh" }}
+        style={{ backgroundImage: "url('/images/nav-banner.png')", backgroundRepeat: "repeat", backgroundSize: "contain", height: "3vh" }}
       >
         {/* Content for the banner */}
       </div>
