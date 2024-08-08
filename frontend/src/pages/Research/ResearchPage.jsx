@@ -129,7 +129,7 @@ const ResearchPage = () => {
         ].map(({ icon: Icon, count, label }, index) => (
           <div
             key={index}
-            className="flex items-center bg-orange-100 justify-center rounded-lg p-4 shadow-md flex-1 mx-4 text-center"
+            className="flex items-center bg-orange-100 md:justify-center rounded-lg p-4 shadow-md flex-1 mx-4 text-center"
           >
             <Icon className="text-4xl text-orange-600 mr-3" />
             <div className="border-l border-gray-300 pl-3">
@@ -156,7 +156,7 @@ const ResearchPage = () => {
       </div>*/}
 
       <div className="text-center bg-orange-50 w-full py-5">
-        <h2 className="text-4xl font-bold my-4">
+        <h2 className="text-4xl font-bold my-4 px-4">
           STRUGGLING WITH YOUR PHD WORK?
         </h2>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center w-full">
@@ -217,7 +217,7 @@ const ResearchPage = () => {
       </div>
 
       <div className="bg-orange-50 py-12 w-full">
-        <h2 className="text-4xl font-bold mb-6 text-center text-orange-600">
+        <h2 className="md:text-4xl leading-normal text-[2.1rem] font-bold mb-6 px-4 text-center text-orange-600">
           SUBJECTS COVERED
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
@@ -469,7 +469,7 @@ const ResearchPage = () => {
         </div>
       </div>
 
-      <div className="py-12 px-12">
+      <div className="py-12 md:px-12 px-4">
         <h2 className="text-3xl font-bold text-center mb-6">
           Frequently Asked Questions
         </h2>
