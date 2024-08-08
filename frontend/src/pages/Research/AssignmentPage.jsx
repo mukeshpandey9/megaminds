@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faFileSignature, faClock, faComments, faInfoCircle, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const AssignmentSupportPage = () => {
+const AssignmentPage = () => {
   const [activeService, setActiveService] = useState(null);
 
   const services = [
@@ -224,4 +224,4 @@ const AssignmentSupportPage = () => {
   );
 };
 
-export default AssignmentSupportPage;
+export default AssignmentPage;
