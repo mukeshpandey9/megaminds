@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faFileSignature, faClock, faComments, faInfoCircle, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faFileSignature, faComments, faPaperPlane, faShoppingCart, faCreditCard, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const AssignmentPage = () => {
   const [activeService, setActiveService] = useState(null);
@@ -57,20 +57,39 @@ const AssignmentPage = () => {
                 <span className="text-3xl font-semibold text-orange-600 mb-4">MEGAMINDS</span>
               </h2>
               <p className="text-lg text-justify mb-4">
-                Crafting success stories since 2009, MEGAMINDS has been a trusted provider of assignment support services, offering quick and affordable solutions with a professional touch. Our reliable Indian experts, graduated from Australian universities, are dedicated to delivering customized assignment solutions tailored to your needs.
+                Crafting success stories since 2018, MEGAMINDS has been a trusted provider of assignment support services, offering quick and affordable solutions with a professional touch. Our reliable Indian experts, graduated from Australian universities, are dedicated to delivering customized assignment solutions tailored to your needs.
               </p>
               <p className="text-lg text-justify mb-4">
                 We pride ourselves on our commitment to timely delivery, ensuring that your assignments are 100% unique and error-free. Our 24/7 online support, available in both English and Hindi, guarantees that you receive the help you need whenever you need it.
               </p>
+             
+             
+
+              {/* 3-Step Process Cards */}
+              <section className="py-8">
+                <h2 className="text-3xl font-bold bg-orange-200 text-center text-black mb-8">3-Step Assignment Support Process</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <FontAwesomeIcon icon={faShoppingCart} className="text-orange-600 text-4xl mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">Place Your Order</h3>
+                    <p>Choose your subject and provide details. Our team will start working on your assignment immediately.</p>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <FontAwesomeIcon icon={faCreditCard} className="text-orange-600 text-4xl mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">Pay for Your Order</h3>
+                    <p>Complete the payment process to confirm your order. We offer multiple secure payment options.</p>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <FontAwesomeIcon icon={faDownload} className="text-orange-600 text-4xl mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">Receive Your Solution</h3>
+                    <p>Download your assignment solution on time and achieve academic success. We're here to support you every step of the way.</p>
+                  </div>
+                </div>
+              </section>
+
               <p className="text-lg text-justify mb-4">
                 Boost your grades today with our high-quality academic solutions. Stay calm, achieve success, and secure your path to academic excellence with MEGAMINDS.
               </p>
-              <p className="text-lg text-justify mb-4">
-                Contact us at +91 875 047 8831 for a free expert consultation and discover how our assignment support can make a difference in your academic journey.
-              </p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded hover:bg-orange-500">
-                Get Assistance
-              </button>
             </div>
 
             {/* Form Block */}
@@ -115,24 +134,67 @@ const AssignmentPage = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
                     required
                   />
+                  <div className="mb-4">
+  <label className="block text-white text-sm font-semibold mb-2 mt-3" htmlFor="assignmentType">
+    Select Assignment Type
+  </label>
+  <select
+    id="assignmentType"
+    name="assignmentType"
+    className="block w-full px-4 py-2 bg-white text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+    required
+  >
+    <option value="" disabled>Select an assignment type</option>
+    <option value="Essay">Essay</option>
+    <option value="Research Paper">Research Paper</option>
+    <option value="Case Study">Case Study</option>
+    <option value="Dissertation">Dissertation</option>
+    <option value="Thesis">Thesis</option>
+    <option value="Lab Report">Lab Report</option>
+    <option value="Project">Project</option>
+    <option value="Presentation">Presentation</option>
+    <option value="Assignment">General Assignment</option>
+    {/* Add more assignment types as needed */}
+  </select>
+</div>
+
                 </div>
                 <div className="mb-4">
-                  <label className="block text-white text-sm font-semibold mb-2" htmlFor="subject">
-                    Select Subject
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    className="block w-full px-4 py-2 bg-white text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
-                    required
-                  >
-                    <option value="" disabled>Select a subject</option>
-                    <option value="Mathematics">Mathematics</option>
-                    <option value="Science">Science</option>
-                    <option value="History">History</option>
-                    {/* Add more subjects as needed */}
-                  </select>
-                </div>
+  <label className="block text-white text-sm font-semibold mb-2" htmlFor="mastersSubject">
+    Select Master's Subject
+  </label>
+  <select
+    id="mastersSubject"
+    name="mastersSubject"
+    className="block w-full px-4 py-2 bg-white text-black border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+    required
+  >
+    <option value="" disabled>Select a subject</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Data Science">Data Science</option>
+    <option value="Business Administration">Business Administration</option>
+    <option value="Finance">Finance</option>
+    <option value="Marketing">Marketing</option>
+    <option value="Economics">Economics</option>
+    <option value="Engineering Management">Engineering Management</option>
+    <option value="Psychology">Psychology</option>
+    <option value="Sociology">Sociology</option>
+    <option value="Education">Education</option>
+    <option value="Public Health">Public Health</option>
+    <option value="Law">Law</option>
+    <option value="Environmental Science">Environmental Science</option>
+    <option value="Political Science">Political Science</option>
+    <option value="International Relations">International Relations</option>
+    <option value="History">History</option>
+    <option value="Art History">Art History</option>
+    <option value="Philosophy">Philosophy</option>
+    <option value="Literature">Literature</option>
+    <option value="Engineering">Engineering</option>
+    <option value="Biomedical Sciences">Biomedical Sciences</option>
+    {/* Add more subjects as needed */}
+  </select>
+</div>
+
                 <div className="mb-4">
                   <label className="block text-white text-sm font-semibold mb-2" htmlFor="urgency">
                     Select Urgency/Deadline
@@ -150,48 +212,12 @@ const AssignmentPage = () => {
                     {/* Add more options as needed */}
                   </select>
                 </div>
-                <div className="mb-4">
-                  <label className="block text-white text-sm font-semibold mb-2" htmlFor="message">
-                    Please explain how can we help you?
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
-                    required
-                  ></textarea>
-                </div>
-                <div className="mb-4">
-                  <label className="block text-white text-sm font-semibold mb-2" htmlFor="captcha">
-                    Captcha
-                  </label>
-                  <input
-                    type="text"
-                    id="captcha"
-                    name="captcha"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600"
-                    required
-                  />
-                </div>
-                <div className="mb-4 flex items-center">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    name="privacy"
-                    className="mr-2"
-                    required
-                  />
-                  <label htmlFor="privacy" className="text-white text-sm">
-                    I agree with the <a href="/privacy-policy" className="text-orange-500 underline">Privacy Policy</a> and <a href="/terms-conditions" className="text-orange-500 underline">Terms & Conditions</a> (Recommended)
-                  </label>
-                </div>
+
                 <button
                   type="submit"
-                  className="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-500"
+                  className="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-500"
                 >
-                  <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
-                  Submit Request
+                  Submit
                 </button>
               </form>
             </div>
@@ -200,27 +226,30 @@ const AssignmentPage = () => {
       </section>
 
       {/* Section 2 - Services */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-black mb-12">Our Assignment Support Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`bg-white p-6 rounded-lg shadow-md ${activeService === index ? 'border-l-4 border-orange-500' : ''}`}
-                onClick={() => setActiveService(index)}
-              >
-                <div className="flex items-center mb-4">
-                  <FontAwesomeIcon icon={service.icon} className="text-orange-600 text-3xl mr-4" />
-                  <h3 className="text-xl font-semibold text-black">{service.title}</h3>
-                </div>
-                {activeService === index && service.content}
-              </div>
-            ))}
+<section className="bg-gray-100 py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center text-orange-600 mb-12">Our Assignment Support Services</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className="bg-white p-6 rounded-lg shadow-md"
+        >
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={service.icon} className="text-orange-600 text-3xl mr-4" />
+            <h3 className="text-xl font-semibold text-black">{service.title}</h3>
           </div>
+          {service.content}
         </div>
-      </section>
+      ))}
     </div>
+  </div>
+</section>
+
+    </div>
+
+
+
   );
 };
 
