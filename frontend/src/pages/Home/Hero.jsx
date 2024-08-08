@@ -15,12 +15,12 @@ const TopNavbar = ({ className = "" }) => {
 
   const navItems = [
     { id: "research", label: "Research", link: "/research" },
-    { id: "master-dissertation", label: "Master Dissertation" },
+    { id: "master-dissertation", label: "Master Dissertation", link: "/masters"},
     { id: "web-development", label: "Web Development" },
     { id: "application-development", label: "Application Development" },
     { id: "student-assignment", label: "Master Student Assignment" },
     { id: "tech-projects", label: "B.Tech/ M.Tech Projects" },
-    // { id: "online-classes", label: "Online Classes" },
+    { id: "online-classes", label: "Online Classes" },
     // { id: "guest-lectures", label: "Guest Lectures" },
     // { id: "offline-classes", label: "Offline Classes" },
   ];
