@@ -212,7 +212,7 @@ const MasterDissertationPage = () => {
       <section className="w-full bg-gradient-to-br from-[#4D250F] to-[#3A1B0F] p-4 text-black mt-1">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center text-orange-600 mb-10">
-            Why Choose Us for Dissertation Writing Help?
+            Why Choose Us for Dissertation Writing Support?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">

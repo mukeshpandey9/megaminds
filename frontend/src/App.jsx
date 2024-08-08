@@ -8,7 +8,10 @@ import {
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/Home/HomePage";
 import Research from "./pages/Research/ResearchPage";
-import Master from "./pages/Research/MasterDissertationPage"
+import Master from "./pages/Research/MasterDissertationPage";
+import Assignment from "./pages/Research/AssignmentSupportPage";
+
+
 
 
 function App() {
@@ -18,6 +21,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="research" element={<Research />} />
         <Route path="masters" element={<Master />} />
+        <Route path="assignment" element={<Assignment />} />
       </Route>
     )
   );
