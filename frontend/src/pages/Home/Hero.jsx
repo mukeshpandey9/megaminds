@@ -14,11 +14,11 @@ const TopNavbar = ({ className = "" }) => {
   };
 
   const navItems = [
+    { id: "web-development", label: "Web Development" , },
     { id: "research", label: "Research", link: "/research" },
     { id: "master-dissertation", label: "Master Dissertation", link: "/masters"},
-    { id: "web-development", label: "Web Development" , link: "/assignment"},
+    { id: "student-assignment", label: "Master Student Assignment"  , link: "/assignment"},
     { id: "application-development", label: "Application Development" },
-    { id: "student-assignment", label: "Master Student Assignment" },
     { id: "tech-projects", label: "B.Tech/ M.Tech Projects" },
     { id: "online-classes", label: "Online Classes" },
     // { id: "guest-lectures", label: "Guest Lectures" },
